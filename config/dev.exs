@@ -36,8 +36,7 @@ config :phoenix, :stacktrace_depth, 20
 # Configure your database
 config :shop, Shop.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
+  username: "amr",
   database: "shop_dev",
   hostname: "localhost",
   pool_size: 10
