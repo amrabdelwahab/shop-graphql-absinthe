@@ -1,6 +1,8 @@
 defmodule Shop.Router do
   use Shop.Web, :router
 
+  forward "/graphql", Absinthe.Plug,
+    schema: Shop.Schema
   pipeline :browser do
     plug :accepts, ["html"]
     plug :fetch_session
