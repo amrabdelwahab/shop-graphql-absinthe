@@ -20,6 +20,7 @@ defmodule Shop.Router do
     get "/", PageController, :index
 
     resources "/shops", ShopController
+    resources "/products", ProductController
   end
 
 
