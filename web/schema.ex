@@ -3,8 +3,8 @@ defmodule Shop.Schema do
   import_types Shop.Schema.Shop.Type
 
   query do
-    field :shops, :string do
-      resolve fn(_args, _info) -> {:ok, "test"} end
+    field :shops, list_of(:shop) do
+      resolve fn(_args, _info) -> {:ok, Shop.Repo.all(Shop.Shop)} end
     end
   end
 

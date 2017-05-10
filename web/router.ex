@@ -14,11 +14,11 @@ defmodule Shop.Router do
   pipeline :api do
     plug :accepts, ["json"]
   end
-
+  get "/graphiql", Absinthe.Plug.GraphiQL, schema: Shop.Schema
   scope "/", Shop do
     pipe_through :browser # Use the default browser stack
-
     get "/", PageController, :index
+
     resources "/shops", ShopController
   end
 
