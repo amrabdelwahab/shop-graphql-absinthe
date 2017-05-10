@@ -14,7 +14,7 @@ defmodule Shop.Product do
   """
   def changeset(struct, params \\ %{}) do
     struct
-    |> cast(params, [:name, :price])
-    |> validate_required([:name, :price])
+    |> cast(params, [:name, :price, :shop_id])
+    |> validate_required([:name, :price, :shop_id])
   end
 end

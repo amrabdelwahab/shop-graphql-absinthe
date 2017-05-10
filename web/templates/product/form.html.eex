@@ -18,6 +18,12 @@
   </div>
 
   <div class="form-group">
+    <%= label f, :shop_id, class: "control-label" %>
+    <%= number_input f, :shop_id, step: "any", class: "form-control" %>
+    <%= error_tag f, :shop_id %>
+  </div>
+
+  <div class="form-group">
     <%= submit "Submit", class: "btn btn-primary" %>
   </div>
 <% end %>

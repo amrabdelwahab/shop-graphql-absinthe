@@ -3,7 +3,7 @@ defmodule Shop.Shop do
 
   schema "shops" do
     field :name, :string
-
+    has_many :products, Shop.Product
     timestamps()
   end
 
