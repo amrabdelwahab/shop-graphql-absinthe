@@ -1,4 +1,5 @@
 %{"absinthe": {:hex, :absinthe, "1.3.0", "0b58aec87c115025c6abbbdaebdd2b5d545d5c47a342e5a8c790d5989d27b24c", [:mix], []},
+  "absinthe_ecto": {:hex, :absinthe_ecto, "0.1.0", "c7c670f0d1a77f98dba4912fe067cebc4f68c1c9875c8f110a0548619e758482", [:mix], [{:absinthe, "~> 1.3.0", [hex: :absinthe, optional: false]}, {:ecto, ">= 0.0.0", [hex: :ecto, optional: false]}]},
   "absinthe_plug": {:hex, :absinthe_plug, "1.3.1", "e97c9faa6a2e29be181205d994c3ca2e2c5c5dec38aea69fcd324407f6c163c6", [:mix], [{:absinthe, "~> 1.3.0", [hex: :absinthe, optional: false]}, {:plug, "~> 1.3.2 or ~> 1.4", [hex: :plug, optional: false]}]},
   "connection": {:hex, :connection, "1.0.4", "a1cae72211f0eef17705aaededacac3eb30e6625b04a6117c1b2db6ace7d5976", [:mix], []},
   "cowboy": {:hex, :cowboy, "1.1.2", "61ac29ea970389a88eca5a65601460162d370a70018afe6f949a29dca91f3bb0", [:rebar3], [{:cowlib, "~> 1.0.2", [hex: :cowlib, optional: false]}, {:ranch, "~> 1.3.2", [hex: :ranch, optional: false]}]},
